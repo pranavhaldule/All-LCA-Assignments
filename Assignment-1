@@ -1,1 +1,70 @@
 
+print("--- DICTIONARY OPERATIONS ---")
+
+# 1. CREATE a dictionary
+# Keys are 'name', 'age', 'branch'
+student = {}
+
+print ("Getting information from user to store in Dictionery")
+#get input from user for different keys in Dictionary
+student["name"]=(input("Enter the name of student "))
+student["age"]=(int(input("Enter the age of student ")))
+student["branch"]=(input("Enter the branch of student "))
+
+#Printing all keys in dictionary
+print("1. Printing all keys from dictionary of student :", student.keys())
+
+#Printing each values of dictionery by accesing each value of Key
+print("2. Printing values from dictionary of student")
+print (student["name"])
+print (student["age"])
+print(student["branch"])
+
+# 2. ADD (Append) a new key-value pair
+# Simply assign a value to a new key
+student["marks"] = 85
+
+#Printing all dictionary values  
+print("3. After Adding 'marks':", student)
+
+# 3. UPDATE an existing value
+student["age"] = 19
+print("4. After Updating 'age':", student)
+
+# 4. ACCESS a value using its key
+print("5. Student Name is:", student["name"])
+
+# 5. REMOVE an item using 'pop()'
+removed_value = student.pop("marks")
+print("6. Removed Marks:", removed_value)
+print("   Dictionary after removal:", student)
+
+
+# ==========================================
+# PART 2: TUPLE OPERATIONS
+# (Tuples use () and CANNOT be changed once created!)
+# ==========================================
+
+print("\n--- TUPLE OPERATIONS ---")
+
+# 1. CREATE a tuple
+subjects = ("Physics", "Maths", "Chemistry", "Python")
+print("1. Initial Tuple:", subjects)
+
+# 2. ACCESS elements (Indexing starts from 0)
+print("2. First subject:", subjects[0])
+print("   Last subject:", subjects[-1])
+
+# 3. TUPLE CONCATENATION (Combining two tuples)
+more_subjects = ("ED", "BEE")
+all_subjects = subjects + more_subjects
+print("3. After Combining Tuples:", all_subjects)
+
+#4. Printing Count of unique value inside tuple
+print("4. Count inside tuple ", subjects.count("Maths"))
+
+#5 Checking if a value exists inside a Tuple
+if "geography"  in subjects:
+    print ("5. value geography exists inside Tuple")
+if "geography" not in subjects:
+    print ("5.  value geography does not exists inside Tuple")
