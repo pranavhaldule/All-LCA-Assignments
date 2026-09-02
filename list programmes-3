@@ -1,0 +1,11 @@
+numbers=[10,20,30,40,50]
+print("original list:",numbers)
+left=0
+right=len(numbers)-1
+while left<right:
+ temp=numbers[left]
+ numbers[left]=numbers[right]
+ numbers[right]=temp
+ left=left+1
+ right=right-1
+print("reversed list",numbers)
