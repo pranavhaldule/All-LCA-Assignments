@@ -1,0 +1,4 @@
+numbers=[10,20,30,40]
+remove_item=numbers.pop(2)
+print("removed list:",remove_item)
+print("updated list:",numbers)      
